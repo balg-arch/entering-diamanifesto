@@ -9,9 +9,13 @@
 
 <meta name="description" content="DIA▲MANIFESTO is a living architecture of thought, articulated through axioms and symbols, designed to activate relational and responsible thinking.">
 
+<link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon-192.png" sizes="192x192">
+<link rel="icon" href="/favicon-48x48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="/favicon-96x96.png" type="image/png" sizes="96x96">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ffffff">
 
 <meta property="og:title" content="DIA▲MANIFESTO — a living architecture of thought">
 <meta property="og:description" content="DIA▲MANIFESTO is a living architecture of thought, articulated through axioms and symbols, designed to activate relational and responsible thinking.">
@@ -69,7 +73,7 @@ html,body{
   padding:0;
   background: var(--paper);
   color: var(--fg);
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   overflow-x:hidden;
   -webkit-text-size-adjust: 100%;
 }
@@ -124,32 +128,6 @@ main{
   filter: contrast(110%);
 }
 
-.wrap::before,
-.wrap::after{
-  content:"";
-  position:absolute;
-  width: 120px;
-  height: 34px;
-  background:
-    linear-gradient(180deg, rgba(255,255,255,.7), rgba(255,255,255,.35)),
-    repeating-linear-gradient(90deg, rgba(0,0,0,.08) 0 2px, rgba(0,0,0,0) 2px 6px);
-  border:1px solid rgba(0,0,0,.18);
-  opacity:.9;
-  mix-blend-mode:multiply;
-}
-
-.wrap::before{
-  top:-18px;
-  left: 18px;
-  transform: rotate(-7deg);
-}
-
-.wrap::after{
-  bottom:-18px;
-  right: 18px;
-  transform: rotate(6deg);
-}
-
 a{
   color: var(--ink);
   text-decoration:none;
@@ -162,10 +140,8 @@ h1{
   margin: 0;
   text-transform: uppercase;
   letter-spacing: .09em;
-
   overflow-wrap: break-word;
   hyphens: auto;
-
   text-shadow:
     1px 0 rgba(0,0,0,.55),
    -1px 0 rgba(0,0,0,.35),
@@ -199,22 +175,17 @@ h1:hover{
   opacity:.9;
 }
 
-/* ▲ as a silent link (no frame) */
 .mark{
   margin-top: 22px;
   font-size: 22px;
   letter-spacing: .25em;
   display: inline-block;
   padding: 6px 10px;
-
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-
   border: none;
   background: none;
-
   opacity: .85;
   cursor: pointer;
-
   transform: rotate(0.5deg);
 }
 
@@ -243,7 +214,6 @@ h1:hover{
 
     <div class="tag"></div>
 
-    <!-- ▲ links to the official site -->
     <a class="mark"
        href="https://diamanifesto.org/"
        target="_blank"
